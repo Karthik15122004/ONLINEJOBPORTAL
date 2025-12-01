@@ -17,7 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://your-frontend-project.vercel.app"],
+  origin: ["http://localhost:5173", "https://onlinejobportal-1hmq.vercel.app"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 };
 
